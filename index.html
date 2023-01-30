@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #container{
+                background: l;
+                width: 1200px;
+                margin: 0 auto;
+                border: 1px solid black;
+            }
+            header{
+                background:maroon;
+                width: 1200px;
+                height: 80px;
+            }
+            nav{
+                background: blueviolet;
+                width: 1200px;
+                height:50px;
+            }
+                nav ul {
+                    list-style: none;
+                }
+                nav ul li{
+                    float: left;
+                    width: 200px;
+                    padding: 10px;
+                    margin: 10px;
+                    text-align: center;
+                    background: darkmagenta;;
+                }
+            section{
+                background:maroon;
+                width: 900px;
+                height: 600px;
+                float: left;
+            }
+            section header{
+                background: none;
+                width: none;
+                height: none;
+                font-size: 50px;
+                margin-left:15px; 
+                font-style: italic;
+                color: burlywood;
+            }
+            aside{
+                width: 300px;
+                height: 600px;
+                float: left;
+            }
+                aside img:hover{
+                    width: 100%;
+                    animation: img_animation 3s;
+                }
+                #img{
+                    height: 200px;
+                    overflow: hidden;
+                }
+                    @keyframes img_animation{
+                        from{width:50;}
+                        to{width:150% ;}
+                    }
+            footer{
+                background: navy;
+                width: 1200px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <header></header>
+        <nav>
+            <ul>
+            <li>Home</li>
+            <li>Article</li>
+            <li>Contact</li>
+            <li>Technology</li>
+            <li>Latest</li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <header>Main Image</header>
+                <article></article>
+                <img src="pics.jpg" width="1200px">
+            </section>
+            <aside>
+                    <div id="img"> <img src="favAnime.png" width="300px"></div>
+                <audio controls muted loop autoplay > 
+                    <source src="audio1.mp3" type="audio/mpeg">
+                </audio>
+                <video>
+                    <source>
+                </video>
+            </aside>
+            <div style="clear: both;"></div>
+        </main>
+        <footer></footer>
+        </div>
+    </body>
+</html>
